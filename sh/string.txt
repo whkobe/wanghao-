@@ -1,0 +1,22 @@
+#! /bin/bash 
+your_name="kobe"
+greeting="hello, "$your_name"!"
+greeting_1="hello,${your_name}!"
+echo $greeting $greeting_1
+
+string='abcd$your_name'
+echo $string
+echo ${#string}//获取字符串长度
+
+
+string="alibaba is a great company"
+echo expr index "$string" is
+echo ${string:1:4}//提取子字符串
+
+
+结果：
+hello, kobe! hello,kobe!
+abcd$your_name
+14
+expr index alibaba is a great company is
+liba
