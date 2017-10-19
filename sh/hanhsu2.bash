@@ -19,3 +19,13 @@ else
 fi
 #return返回的是返回值或执行状态，返回值的范围不超过255.
 #函数返回值会存在 $? 中，没有return时，默认的返回值是最后一条语句执行的状态。
+
+read -p "请输入一个数"  var
+#if  test `expr $var % 2` -eq 0
+#if [ `expr $var % 2` -eq 0 ]
+if [ $(expr $var % 2) -eq 0 ]
+then 
+    echo "even"
+else
+    echo "odd"
+fi
